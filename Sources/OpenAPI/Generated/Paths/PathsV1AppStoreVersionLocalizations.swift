@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appStoreVersionLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppStoreVersionLocalizationCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppStoreVersionLocalizationResponse> {
 			.post(path, body: body)
 		}
 	}

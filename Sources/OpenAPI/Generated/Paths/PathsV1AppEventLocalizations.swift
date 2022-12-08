@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appEventLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppEventLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventLocalizationResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppEventLocalizationCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppEventLocalizationResponse> {
 			.post(path, body: body)
 		}
 	}

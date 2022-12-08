@@ -15,7 +15,7 @@ extension APIEndpoint.V2.InAppPurchases.WithID {
 		/// Path: `/v2/inAppPurchases/{id}/appStoreReviewScreenshot`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

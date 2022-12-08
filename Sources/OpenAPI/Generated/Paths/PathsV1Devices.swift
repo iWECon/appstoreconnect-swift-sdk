@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/devices`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.DevicesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.DevicesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -88,7 +88,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.DeviceCreateRequest) -> Request<AppStoreConnect_Swift_SDK.DeviceResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.DeviceCreateRequest) -> Request<AppStoreConnectSwiftSDK.DeviceResponse> {
 			.post(path, body: body)
 		}
 	}

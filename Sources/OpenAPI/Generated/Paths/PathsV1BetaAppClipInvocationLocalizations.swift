@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaAppClipInvocationLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaAppClipInvocationLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaAppClipInvocationLocalizationResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.BetaAppClipInvocationLocalizationCreateRequest) -> Request<AppStoreConnectSwiftSDK.BetaAppClipInvocationLocalizationResponse> {
 			.post(path, body: body)
 		}
 	}

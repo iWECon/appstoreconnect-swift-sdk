@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Devices {
 		/// Path: `/v1/devices/{id}`
 		public let path: String
 
-		public func get(fieldsDevices: [FieldsDevices]? = nil) -> Request<AppStoreConnect_Swift_SDK.DeviceResponse> {
+		public func get(fieldsDevices: [FieldsDevices]? = nil) -> Request<AppStoreConnectSwiftSDK.DeviceResponse> {
 			.get(path, query: makeGetQuery(fieldsDevices))
 		}
 
@@ -35,7 +35,7 @@ extension APIEndpoint.V1.Devices {
 			case udid
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.DeviceUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.DeviceResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.DeviceUpdateRequest) -> Request<AppStoreConnectSwiftSDK.DeviceResponse> {
 			.patch(path, body: body)
 		}
 	}

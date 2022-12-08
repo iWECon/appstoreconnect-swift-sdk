@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CiWorkflows.WithID {
 		/// Path: `/v1/ciWorkflows/{id}/repository`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmRepositoryResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.ScmRepositoryResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

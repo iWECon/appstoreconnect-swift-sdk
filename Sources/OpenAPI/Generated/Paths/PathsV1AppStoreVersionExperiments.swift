@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appStoreVersionExperiments`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionExperimentCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppStoreVersionExperimentCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppStoreVersionExperimentResponse> {
 			.post(path, body: body)
 		}
 	}

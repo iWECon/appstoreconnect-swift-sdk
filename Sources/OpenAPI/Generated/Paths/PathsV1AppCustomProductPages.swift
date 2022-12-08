@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appCustomProductPages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppCustomProductPageCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppCustomProductPageResponse> {
 			.post(path, body: body)
 		}
 	}

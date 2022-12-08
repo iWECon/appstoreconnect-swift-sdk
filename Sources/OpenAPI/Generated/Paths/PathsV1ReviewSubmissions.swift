@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/reviewSubmissions`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.ReviewSubmissionsResponse> {
+		public func get(parameters: GetParameters) -> Request<AppStoreConnectSwiftSDK.ReviewSubmissionsResponse> {
 			.get(path, query: parameters.asQuery)
 		}
 
@@ -98,7 +98,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.ReviewSubmissionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.ReviewSubmissionResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.ReviewSubmissionCreateRequest) -> Request<AppStoreConnectSwiftSDK.ReviewSubmissionResponse> {
 			.post(path, body: body)
 		}
 	}

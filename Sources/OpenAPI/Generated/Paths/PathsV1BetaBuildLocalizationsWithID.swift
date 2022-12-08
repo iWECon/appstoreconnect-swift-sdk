@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaBuildLocalizations {
 		/// Path: `/v1/betaBuildLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaBuildLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.BetaBuildLocalizationResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -76,7 +76,7 @@ extension APIEndpoint.V1.BetaBuildLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BetaBuildLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaBuildLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.BetaBuildLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.BetaBuildLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

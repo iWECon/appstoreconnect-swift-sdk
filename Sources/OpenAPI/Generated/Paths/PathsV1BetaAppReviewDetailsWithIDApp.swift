@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaAppReviewDetails.WithID {
 		/// Path: `/v1/betaAppReviewDetails/{id}/app`
 		public let path: String
 
-		public func get(fieldsApps: [FieldsApps]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppResponse> {
+		public func get(fieldsApps: [FieldsApps]? = nil) -> Request<AppStoreConnectSwiftSDK.AppResponse> {
 			.get(path, query: makeGetQuery(fieldsApps))
 		}
 

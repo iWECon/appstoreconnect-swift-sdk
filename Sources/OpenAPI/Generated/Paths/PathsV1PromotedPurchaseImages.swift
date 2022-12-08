@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/promotedPurchaseImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.PromotedPurchaseImageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseImageResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.PromotedPurchaseImageCreateRequest) -> Request<AppStoreConnectSwiftSDK.PromotedPurchaseImageResponse> {
 			.post(path, body: body)
 		}
 	}

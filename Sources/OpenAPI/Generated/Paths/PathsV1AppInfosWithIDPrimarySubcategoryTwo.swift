@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppInfos.WithID {
 		/// Path: `/v1/appInfos/{id}/primarySubcategoryTwo`
 		public let path: String
 
-		public func get(fieldsAppCategories: [FieldsAppCategories]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCategoryResponse> {
+		public func get(fieldsAppCategories: [FieldsAppCategories]? = nil) -> Request<AppStoreConnectSwiftSDK.AppCategoryResponse> {
 			.get(path, query: makeGetQuery(fieldsAppCategories))
 		}
 

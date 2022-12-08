@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaLicenseAgreements {
 		/// Path: `/v1/betaLicenseAgreements/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaLicenseAgreementResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.BetaLicenseAgreementResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -89,7 +89,7 @@ extension APIEndpoint.V1.BetaLicenseAgreements {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BetaLicenseAgreementUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaLicenseAgreementResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.BetaLicenseAgreementUpdateRequest) -> Request<AppStoreConnectSwiftSDK.BetaLicenseAgreementResponse> {
 			.patch(path, body: body)
 		}
 	}

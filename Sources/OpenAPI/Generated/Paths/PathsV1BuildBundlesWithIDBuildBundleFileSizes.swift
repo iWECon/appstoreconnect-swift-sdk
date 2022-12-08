@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BuildBundles.WithID {
 		/// Path: `/v1/buildBundles/{id}/buildBundleFileSizes`
 		public let path: String
 
-		public func get(fieldsBuildBundleFileSizes: [FieldsBuildBundleFileSizes]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildBundleFileSizesResponse> {
+		public func get(fieldsBuildBundleFileSizes: [FieldsBuildBundleFileSizes]? = nil, limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.BuildBundleFileSizesResponse> {
 			.get(path, query: makeGetQuery(fieldsBuildBundleFileSizes, limit))
 		}
 

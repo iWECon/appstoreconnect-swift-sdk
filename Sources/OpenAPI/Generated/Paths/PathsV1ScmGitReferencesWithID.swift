@@ -15,7 +15,7 @@ extension APIEndpoint.V1.ScmGitReferences {
 		/// Path: `/v1/scmGitReferences/{id}`
 		public let path: String
 
-		public func get(fieldsScmGitReferences: [FieldsScmGitReferences]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmGitReferenceResponse> {
+		public func get(fieldsScmGitReferences: [FieldsScmGitReferences]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.ScmGitReferenceResponse> {
 			.get(path, query: makeGetQuery(fieldsScmGitReferences, include))
 		}
 

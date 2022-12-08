@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations {
 		/// Path: `/v1/appCustomProductPageLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppCustomProductPageLocalizationResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -78,7 +78,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppCustomProductPageLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppCustomProductPageLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppClipDefaultExperienceLocalizations.WithID {
 		/// Path: `/v1/appClipDefaultExperienceLocalizations/{id}/appClipHeaderImage`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppClipHeaderImageResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

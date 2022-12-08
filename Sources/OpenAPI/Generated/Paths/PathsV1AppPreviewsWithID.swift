@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppPreviews {
 		/// Path: `/v1/appPreviews/{id}`
 		public let path: String
 
-		public func get(fieldsAppPreviews: [FieldsAppPreviews]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPreviewResponse> {
+		public func get(fieldsAppPreviews: [FieldsAppPreviews]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppPreviewResponse> {
 			.get(path, query: makeGetQuery(fieldsAppPreviews, include))
 		}
 
@@ -44,7 +44,7 @@ extension APIEndpoint.V1.AppPreviews {
 			case appPreviewSet
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppPreviewUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppPreviewResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppPreviewUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppPreviewResponse> {
 			.patch(path, body: body)
 		}
 

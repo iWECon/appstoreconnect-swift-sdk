@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/inAppPurchaseAppStoreReviewScreenshots`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotCreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotCreateRequest) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			.post(path, body: body)
 		}
 	}

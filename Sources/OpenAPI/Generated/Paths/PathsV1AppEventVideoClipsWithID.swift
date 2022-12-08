@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEventVideoClips {
 		/// Path: `/v1/appEventVideoClips/{id}`
 		public let path: String
 
-		public func get(fieldsAppEventVideoClips: [FieldsAppEventVideoClips]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventVideoClipResponse> {
+		public func get(fieldsAppEventVideoClips: [FieldsAppEventVideoClips]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppEventVideoClipResponse> {
 			.get(path, query: makeGetQuery(fieldsAppEventVideoClips, include))
 		}
 
@@ -43,7 +43,7 @@ extension APIEndpoint.V1.AppEventVideoClips {
 			case appEventLocalization
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventVideoClipUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventVideoClipResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppEventVideoClipUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppEventVideoClipResponse> {
 			.patch(path, body: body)
 		}
 

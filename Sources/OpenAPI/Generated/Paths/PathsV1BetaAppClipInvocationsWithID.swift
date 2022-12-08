@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaAppClipInvocations {
 		/// Path: `/v1/betaAppClipInvocations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaAppClipInvocationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.BetaAppClipInvocationResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -49,7 +49,7 @@ extension APIEndpoint.V1.BetaAppClipInvocations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BetaAppClipInvocationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaAppClipInvocationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.BetaAppClipInvocationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.BetaAppClipInvocationResponse> {
 			.patch(path, body: body)
 		}
 

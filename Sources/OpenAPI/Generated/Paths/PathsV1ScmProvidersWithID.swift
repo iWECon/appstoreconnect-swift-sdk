@@ -15,7 +15,7 @@ extension APIEndpoint.V1.ScmProviders {
 		/// Path: `/v1/scmProviders/{id}`
 		public let path: String
 
-		public func get(fieldsScmProviders: [FieldsScmProviders]? = nil, fieldsScmRepositories: [FieldsScmRepositories]? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmProviderResponse> {
+		public func get(fieldsScmProviders: [FieldsScmProviders]? = nil, fieldsScmRepositories: [FieldsScmRepositories]? = nil) -> Request<AppStoreConnectSwiftSDK.ScmProviderResponse> {
 			.get(path, query: makeGetQuery(fieldsScmProviders, fieldsScmRepositories))
 		}
 

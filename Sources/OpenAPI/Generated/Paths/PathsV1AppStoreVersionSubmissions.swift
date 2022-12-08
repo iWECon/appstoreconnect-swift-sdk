@@ -16,7 +16,7 @@ extension APIEndpoint.V1 {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionSubmissionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionSubmissionResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppStoreVersionSubmissionCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppStoreVersionSubmissionResponse> {
 			.post(path, body: body)
 		}
 	}

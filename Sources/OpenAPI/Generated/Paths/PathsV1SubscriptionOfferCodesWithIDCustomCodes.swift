@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodes.WithID {
 		/// Path: `/v1/subscriptionOfferCodes/{id}/customCodes`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeCustomCodesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionOfferCodeCustomCodesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

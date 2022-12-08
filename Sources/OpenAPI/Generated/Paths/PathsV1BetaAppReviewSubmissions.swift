@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaAppReviewSubmissions`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.BetaAppReviewSubmissionsResponse> {
+		public func get(parameters: GetParameters) -> Request<AppStoreConnectSwiftSDK.BetaAppReviewSubmissionsResponse> {
 			.get(path, query: parameters.asQuery)
 		}
 
@@ -92,7 +92,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaAppReviewSubmissionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaAppReviewSubmissionResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.BetaAppReviewSubmissionCreateRequest) -> Request<AppStoreConnectSwiftSDK.BetaAppReviewSubmissionResponse> {
 			.post(path, body: body)
 		}
 	}

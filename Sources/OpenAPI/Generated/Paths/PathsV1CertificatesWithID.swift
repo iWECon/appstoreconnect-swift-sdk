@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Certificates {
 		/// Path: `/v1/certificates/{id}`
 		public let path: String
 
-		public func get(fieldsCertificates: [FieldsCertificates]? = nil) -> Request<AppStoreConnect_Swift_SDK.CertificateResponse> {
+		public func get(fieldsCertificates: [FieldsCertificates]? = nil) -> Request<AppStoreConnectSwiftSDK.CertificateResponse> {
 			.get(path, query: makeGetQuery(fieldsCertificates))
 		}
 

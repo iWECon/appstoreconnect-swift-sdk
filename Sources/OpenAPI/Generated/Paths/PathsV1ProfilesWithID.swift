@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Profiles {
 		/// Path: `/v1/profiles/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ProfileResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.ProfileResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

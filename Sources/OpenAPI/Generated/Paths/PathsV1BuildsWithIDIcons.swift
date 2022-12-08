@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Builds.WithID {
 		/// Path: `/v1/builds/{id}/icons`
 		public let path: String
 
-		public func get(fieldsBuildIcons: [FieldsBuildIcons]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildIconsResponse> {
+		public func get(fieldsBuildIcons: [FieldsBuildIcons]? = nil, limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.BuildIconsResponse> {
 			.get(path, query: makeGetQuery(fieldsBuildIcons, limit))
 		}
 

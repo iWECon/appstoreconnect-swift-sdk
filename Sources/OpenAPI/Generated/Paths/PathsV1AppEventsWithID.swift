@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEvents {
 		/// Path: `/v1/appEvents/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppEventResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -71,7 +71,7 @@ extension APIEndpoint.V1.AppEvents {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppEventUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppEventResponse> {
 			.patch(path, body: body)
 		}
 

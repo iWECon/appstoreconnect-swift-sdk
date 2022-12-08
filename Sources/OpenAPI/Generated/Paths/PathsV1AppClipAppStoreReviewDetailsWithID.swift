@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppClipAppStoreReviewDetails {
 		/// Path: `/v1/appClipAppStoreReviewDetails/{id}`
 		public let path: String
 
-		public func get(fieldsAppClipAppStoreReviewDetails: [FieldsAppClipAppStoreReviewDetails]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailResponse> {
+		public func get(fieldsAppClipAppStoreReviewDetails: [FieldsAppClipAppStoreReviewDetails]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppClipAppStoreReviewDetailResponse> {
 			.get(path, query: makeGetQuery(fieldsAppClipAppStoreReviewDetails, include))
 		}
 
@@ -35,7 +35,7 @@ extension APIEndpoint.V1.AppClipAppStoreReviewDetails {
 			case appClipDefaultExperience
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppClipAppStoreReviewDetailUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppClipAppStoreReviewDetailResponse> {
 			.patch(path, body: body)
 		}
 	}

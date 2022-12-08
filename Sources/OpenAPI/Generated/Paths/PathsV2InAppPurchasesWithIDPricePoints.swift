@@ -15,7 +15,7 @@ extension APIEndpoint.V2.InAppPurchases.WithID {
 		/// Path: `/v2/inAppPurchases/{id}/pricePoints`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchasePricePointsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchasePricePointsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

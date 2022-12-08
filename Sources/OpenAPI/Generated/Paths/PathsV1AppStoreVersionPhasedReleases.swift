@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appStoreVersionPhasedReleases`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionPhasedReleaseCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionPhasedReleaseResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppStoreVersionPhasedReleaseCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppStoreVersionPhasedReleaseResponse> {
 			.post(path, body: body)
 		}
 	}

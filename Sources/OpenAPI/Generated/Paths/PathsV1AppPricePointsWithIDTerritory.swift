@@ -16,7 +16,7 @@ extension APIEndpoint.V1.AppPricePoints.WithID {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(fieldsTerritories: [FieldsTerritories]? = nil) -> Request<AppStoreConnect_Swift_SDK.TerritoryResponse> {
+		public func get(fieldsTerritories: [FieldsTerritories]? = nil) -> Request<AppStoreConnectSwiftSDK.TerritoryResponse> {
 			.get(path, query: makeGetQuery(fieldsTerritories))
 		}
 

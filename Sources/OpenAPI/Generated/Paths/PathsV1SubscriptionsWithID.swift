@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Subscriptions {
 		/// Path: `/v1/subscriptions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -191,7 +191,7 @@ extension APIEndpoint.V1.Subscriptions {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionResponse> {
 			.patch(path, body: body)
 		}
 

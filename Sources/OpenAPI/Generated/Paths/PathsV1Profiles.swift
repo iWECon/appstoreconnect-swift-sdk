@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/profiles`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ProfilesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.ProfilesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -153,7 +153,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.ProfileCreateRequest) -> Request<AppStoreConnect_Swift_SDK.ProfileResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.ProfileCreateRequest) -> Request<AppStoreConnectSwiftSDK.ProfileResponse> {
 			.post(path, body: body)
 		}
 	}

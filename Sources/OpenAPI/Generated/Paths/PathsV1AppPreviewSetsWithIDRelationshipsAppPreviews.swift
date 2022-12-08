@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppPreviewSets.WithID.Relationships {
 		/// Path: `/v1/appPreviewSets/{id}/relationships/appPreviews`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPreviewSetAppPreviewsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.AppPreviewSetAppPreviewsLinkagesResponse> {
 			.get(path, query: makeGetQuery(limit))
 		}
 
@@ -25,7 +25,7 @@ extension APIEndpoint.V1.AppPreviewSets.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppPreviewSetAppPreviewsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppPreviewSetAppPreviewsLinkagesRequest) -> Request<Void> {
 			.patch(path, body: body)
 		}
 	}

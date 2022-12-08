@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppScreenshots {
 		/// Path: `/v1/appScreenshots/{id}`
 		public let path: String
 
-		public func get(fieldsAppScreenshots: [FieldsAppScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppScreenshotResponse> {
+		public func get(fieldsAppScreenshots: [FieldsAppScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppScreenshotResponse> {
 			.get(path, query: makeGetQuery(fieldsAppScreenshots, include))
 		}
 
@@ -43,7 +43,7 @@ extension APIEndpoint.V1.AppScreenshots {
 			case appScreenshotSet
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppScreenshotResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppScreenshotUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppScreenshotResponse> {
 			.patch(path, body: body)
 		}
 

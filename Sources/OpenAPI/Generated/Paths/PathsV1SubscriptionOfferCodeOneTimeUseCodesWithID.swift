@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodeOneTimeUseCodes {
 		/// Path: `/v1/subscriptionOfferCodeOneTimeUseCodes/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeOneTimeUseCodeResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionOfferCodeOneTimeUseCodeResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -52,7 +52,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodeOneTimeUseCodes {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeOneTimeUseCodeResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionOfferCodeOneTimeUseCodeResponse> {
 			.patch(path, body: body)
 		}
 	}

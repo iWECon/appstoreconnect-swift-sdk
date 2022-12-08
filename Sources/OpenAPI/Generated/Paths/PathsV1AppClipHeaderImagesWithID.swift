@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppClipHeaderImages {
 		/// Path: `/v1/appClipHeaderImages/{id}`
 		public let path: String
 
-		public func get(fieldsAppClipHeaderImages: [FieldsAppClipHeaderImages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func get(fieldsAppClipHeaderImages: [FieldsAppClipHeaderImages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppClipHeaderImageResponse> {
 			.get(path, query: makeGetQuery(fieldsAppClipHeaderImages, include))
 		}
 
@@ -41,7 +41,7 @@ extension APIEndpoint.V1.AppClipHeaderImages {
 			case appClipDefaultExperienceLocalization
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipHeaderImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppClipHeaderImageUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppClipHeaderImageResponse> {
 			.patch(path, body: body)
 		}
 

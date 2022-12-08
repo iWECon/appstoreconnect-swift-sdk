@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaAppClipInvocationLocalizations {
 		/// Path: `/v1/betaAppClipInvocationLocalizations/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BetaAppClipInvocationLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaAppClipInvocationLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.BetaAppClipInvocationLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.BetaAppClipInvocationLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

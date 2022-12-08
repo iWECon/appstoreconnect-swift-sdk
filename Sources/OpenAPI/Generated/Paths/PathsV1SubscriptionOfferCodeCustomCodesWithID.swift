@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodeCustomCodes {
 		/// Path: `/v1/subscriptionOfferCodeCustomCodes/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionOfferCodeCustomCodes: [FieldsSubscriptionOfferCodeCustomCodes]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeCustomCodeResponse> {
+		public func get(fieldsSubscriptionOfferCodeCustomCodes: [FieldsSubscriptionOfferCodeCustomCodes]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionOfferCodeCustomCodeResponse> {
 			.get(path, query: makeGetQuery(fieldsSubscriptionOfferCodeCustomCodes, include))
 		}
 
@@ -39,7 +39,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodeCustomCodes {
 			case offerCode
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionOfferCodeCustomCodeUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeCustomCodeResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionOfferCodeCustomCodeUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionOfferCodeCustomCodeResponse> {
 			.patch(path, body: body)
 		}
 	}

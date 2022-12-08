@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarations {
 		/// Path: `/v1/appEncryptionDeclarations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppEncryptionDeclarationResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

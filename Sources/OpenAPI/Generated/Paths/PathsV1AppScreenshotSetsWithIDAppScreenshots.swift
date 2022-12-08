@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppScreenshotSets.WithID {
 		/// Path: `/v1/appScreenshotSets/{id}/appScreenshots`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppScreenshotsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppScreenshotsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

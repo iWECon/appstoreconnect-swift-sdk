@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/scmRepositories`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmRepositoriesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.ScmRepositoriesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

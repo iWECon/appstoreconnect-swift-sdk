@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppCustomProductPageVersions {
 		/// Path: `/v1/appCustomProductPageVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppCustomProductPageVersionResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

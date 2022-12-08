@@ -15,7 +15,7 @@ extension APIEndpoint.V1.InAppPurchasePriceSchedules.WithID {
 		/// Path: `/v1/inAppPurchasePriceSchedules/{id}/manualPrices`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchasePricesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchasePricesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

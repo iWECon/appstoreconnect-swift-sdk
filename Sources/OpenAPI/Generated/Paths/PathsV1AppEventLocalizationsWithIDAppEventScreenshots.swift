@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEventLocalizations.WithID {
 		/// Path: `/v1/appEventLocalizations/{id}/appEventScreenshots`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventScreenshotsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppEventScreenshotsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

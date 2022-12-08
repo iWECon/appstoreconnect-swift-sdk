@@ -15,7 +15,7 @@ extension APIEndpoint.V1.InAppPurchaseLocalizations {
 		/// Path: `/v1/inAppPurchaseLocalizations/{id}`
 		public let path: String
 
-		public func get(fieldsInAppPurchaseLocalizations: [FieldsInAppPurchaseLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationResponse> {
+		public func get(fieldsInAppPurchaseLocalizations: [FieldsInAppPurchaseLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseLocalizationResponse> {
 			.get(path, query: makeGetQuery(fieldsInAppPurchaseLocalizations, include))
 		}
 
@@ -38,7 +38,7 @@ extension APIEndpoint.V1.InAppPurchaseLocalizations {
 			case inAppPurchaseV2
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.InAppPurchaseLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

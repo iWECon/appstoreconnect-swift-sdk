@@ -15,7 +15,7 @@ extension APIEndpoint.V1.PromotedPurchases.WithID {
 		/// Path: `/v1/promotedPurchases/{id}/promotionImages`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseImagesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.PromotedPurchaseImagesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionAppStoreReviewScreenshots {
 		/// Path: `/v1/subscriptionAppStoreReviewScreenshots/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionAppStoreReviewScreenshots: [FieldsSubscriptionAppStoreReviewScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func get(fieldsSubscriptionAppStoreReviewScreenshots: [FieldsSubscriptionAppStoreReviewScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionAppStoreReviewScreenshotResponse> {
 			.get(path, query: makeGetQuery(fieldsSubscriptionAppStoreReviewScreenshots, include))
 		}
 
@@ -43,7 +43,7 @@ extension APIEndpoint.V1.SubscriptionAppStoreReviewScreenshots {
 			case subscription
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionAppStoreReviewScreenshotResponse> {
 			.patch(path, body: body)
 		}
 

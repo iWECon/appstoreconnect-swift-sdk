@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Users.WithID.Relationships {
 		/// Path: `/v1/users/{id}/relationships/visibleApps`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.UserVisibleAppsLinkagesResponse> {
 			.get(path, query: makeGetQuery(limit))
 		}
 
@@ -25,15 +25,15 @@ extension APIEndpoint.V1.Users.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: AppStoreConnectSwiftSDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			.post(path, body: body)
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			.patch(path, body: body)
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: AppStoreConnectSwiftSDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			.delete(path, body: body)
 		}
 	}

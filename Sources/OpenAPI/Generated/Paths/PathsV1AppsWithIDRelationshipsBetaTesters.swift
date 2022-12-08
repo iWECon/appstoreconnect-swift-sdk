@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/betaTesters`
 		public let path: String
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.AppBetaTestersLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: AppStoreConnectSwiftSDK.AppBetaTestersLinkagesRequest) -> Request<Void> {
 			.delete(path, body: body)
 		}
 	}

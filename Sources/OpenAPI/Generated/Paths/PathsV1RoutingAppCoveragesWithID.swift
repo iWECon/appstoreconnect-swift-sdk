@@ -15,7 +15,7 @@ extension APIEndpoint.V1.RoutingAppCoverages {
 		/// Path: `/v1/routingAppCoverages/{id}`
 		public let path: String
 
-		public func get(fieldsRoutingAppCoverages: [FieldsRoutingAppCoverages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.RoutingAppCoverageResponse> {
+		public func get(fieldsRoutingAppCoverages: [FieldsRoutingAppCoverages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.RoutingAppCoverageResponse> {
 			.get(path, query: makeGetQuery(fieldsRoutingAppCoverages, include))
 		}
 
@@ -40,7 +40,7 @@ extension APIEndpoint.V1.RoutingAppCoverages {
 			case appStoreVersion
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.RoutingAppCoverageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.RoutingAppCoverageResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.RoutingAppCoverageUpdateRequest) -> Request<AppStoreConnectSwiftSDK.RoutingAppCoverageResponse> {
 			.patch(path, body: body)
 		}
 

@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionPricePoints {
 		/// Path: `/v1/subscriptionPricePoints/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionPricePoints: [FieldsSubscriptionPricePoints]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPricePointResponse> {
+		public func get(fieldsSubscriptionPricePoints: [FieldsSubscriptionPricePoints]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionPricePointResponse> {
 			.get(path, query: makeGetQuery(fieldsSubscriptionPricePoints, include))
 		}
 

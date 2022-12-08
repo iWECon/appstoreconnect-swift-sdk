@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CustomerReviewResponses {
 		/// Path: `/v1/customerReviewResponses/{id}`
 		public let path: String
 
-		public func get(fieldsCustomerReviewResponses: [FieldsCustomerReviewResponses]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.CustomerReviewResponseV1Response> {
+		public func get(fieldsCustomerReviewResponses: [FieldsCustomerReviewResponses]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.CustomerReviewResponseV1Response> {
 			.get(path, query: makeGetQuery(fieldsCustomerReviewResponses, include))
 		}
 

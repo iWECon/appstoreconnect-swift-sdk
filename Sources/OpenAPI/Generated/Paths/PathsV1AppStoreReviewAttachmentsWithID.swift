@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppStoreReviewAttachments {
 		/// Path: `/v1/appStoreReviewAttachments/{id}`
 		public let path: String
 
-		public func get(fieldsAppStoreReviewAttachments: [FieldsAppStoreReviewAttachments]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentResponse> {
+		public func get(fieldsAppStoreReviewAttachments: [FieldsAppStoreReviewAttachments]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppStoreReviewAttachmentResponse> {
 			.get(path, query: makeGetQuery(fieldsAppStoreReviewAttachments, include))
 		}
 
@@ -40,7 +40,7 @@ extension APIEndpoint.V1.AppStoreReviewAttachments {
 			case appStoreReviewDetail
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppStoreReviewAttachmentUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppStoreReviewAttachmentResponse> {
 			.patch(path, body: body)
 		}
 

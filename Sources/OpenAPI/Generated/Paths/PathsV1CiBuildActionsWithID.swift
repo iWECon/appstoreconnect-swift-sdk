@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CiBuildActions {
 		/// Path: `/v1/ciBuildActions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiBuildActionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.CiBuildActionResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

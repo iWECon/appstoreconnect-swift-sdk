@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appInfoLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppInfoLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppInfoLocalizationResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppInfoLocalizationCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppInfoLocalizationResponse> {
 			.post(path, body: body)
 		}
 	}

@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/subscriptionSubmissions`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionSubmissionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionSubmissionResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.SubscriptionSubmissionCreateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionSubmissionResponse> {
 			.post(path, body: body)
 		}
 	}

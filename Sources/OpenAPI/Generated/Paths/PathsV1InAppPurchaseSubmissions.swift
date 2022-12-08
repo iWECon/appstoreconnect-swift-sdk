@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/inAppPurchaseSubmissions`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseSubmissionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseSubmissionResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.InAppPurchaseSubmissionCreateRequest) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseSubmissionResponse> {
 			.post(path, body: body)
 		}
 	}

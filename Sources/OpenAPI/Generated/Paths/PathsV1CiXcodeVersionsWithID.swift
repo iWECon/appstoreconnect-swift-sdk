@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CiXcodeVersions {
 		/// Path: `/v1/ciXcodeVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiXcodeVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.CiXcodeVersionResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

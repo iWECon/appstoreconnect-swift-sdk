@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations.WithID {
 		/// Path: `/v1/appStoreVersionLocalizations/{id}/appScreenshotSets`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppScreenshotSetsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppScreenshotSetsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

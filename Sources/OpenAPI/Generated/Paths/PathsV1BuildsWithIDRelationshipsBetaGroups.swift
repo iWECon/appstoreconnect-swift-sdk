@@ -15,11 +15,11 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/betaGroups`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BuildBetaGroupsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: AppStoreConnectSwiftSDK.BuildBetaGroupsLinkagesRequest) -> Request<Void> {
 			.post(path, body: body)
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.BuildBetaGroupsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: AppStoreConnectSwiftSDK.BuildBetaGroupsLinkagesRequest) -> Request<Void> {
 			.delete(path, body: body)
 		}
 	}

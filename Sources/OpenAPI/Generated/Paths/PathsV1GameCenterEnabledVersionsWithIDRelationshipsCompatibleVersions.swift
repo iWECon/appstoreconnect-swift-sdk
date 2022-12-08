@@ -15,7 +15,7 @@ extension APIEndpoint.V1.GameCenterEnabledVersions.WithID.Relationships {
 		/// Path: `/v1/gameCenterEnabledVersions/{id}/relationships/compatibleVersions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.GameCenterEnabledVersionCompatibleVersionsLinkagesResponse> {
 			.get(path, query: makeGetQuery(limit))
 		}
 
@@ -25,15 +25,15 @@ extension APIEndpoint.V1.GameCenterEnabledVersions.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: AppStoreConnectSwiftSDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			.post(path, body: body)
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			.patch(path, body: body)
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: AppStoreConnectSwiftSDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			.delete(path, body: body)
 		}
 	}

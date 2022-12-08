@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEventScreenshots {
 		/// Path: `/v1/appEventScreenshots/{id}`
 		public let path: String
 
-		public func get(fieldsAppEventScreenshots: [FieldsAppEventScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventScreenshotResponse> {
+		public func get(fieldsAppEventScreenshots: [FieldsAppEventScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppEventScreenshotResponse> {
 			.get(path, query: makeGetQuery(fieldsAppEventScreenshots, include))
 		}
 
@@ -42,7 +42,7 @@ extension APIEndpoint.V1.AppEventScreenshots {
 			case appEventLocalization
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventScreenshotResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppEventScreenshotUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppEventScreenshotResponse> {
 			.patch(path, body: body)
 		}
 

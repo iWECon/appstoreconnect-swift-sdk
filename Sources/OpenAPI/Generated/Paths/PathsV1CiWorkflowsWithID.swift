@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CiWorkflows {
 		/// Path: `/v1/ciWorkflows/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiWorkflowResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.CiWorkflowResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -105,7 +105,7 @@ extension APIEndpoint.V1.CiWorkflows {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.CiWorkflowUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.CiWorkflowResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.CiWorkflowUpdateRequest) -> Request<AppStoreConnectSwiftSDK.CiWorkflowResponse> {
 			.patch(path, body: body)
 		}
 

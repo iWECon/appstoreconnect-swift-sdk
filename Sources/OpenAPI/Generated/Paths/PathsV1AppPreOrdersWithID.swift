@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppPreOrders {
 		/// Path: `/v1/appPreOrders/{id}`
 		public let path: String
 
-		public func get(fieldsAppPreOrders: [FieldsAppPreOrders]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPreOrderResponse> {
+		public func get(fieldsAppPreOrders: [FieldsAppPreOrders]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppPreOrderResponse> {
 			.get(path, query: makeGetQuery(fieldsAppPreOrders, include))
 		}
 
@@ -36,7 +36,7 @@ extension APIEndpoint.V1.AppPreOrders {
 			case app
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppPreOrderUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppPreOrderResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppPreOrderUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppPreOrderResponse> {
 			.patch(path, body: body)
 		}
 

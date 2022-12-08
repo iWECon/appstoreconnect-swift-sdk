@@ -15,7 +15,7 @@ extension APIEndpoint.V1.UserInvitations.WithID {
 		/// Path: `/v1/userInvitations/{id}/visibleApps`
 		public let path: String
 
-		public func get(fieldsApps: [FieldsApps]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppsResponse> {
+		public func get(fieldsApps: [FieldsApps]? = nil, limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.AppsResponse> {
 			.get(path, query: makeGetQuery(fieldsApps, limit))
 		}
 

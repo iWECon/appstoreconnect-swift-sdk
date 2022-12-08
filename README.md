@@ -27,7 +27,7 @@ To request access, go to the new API Keys section in Users and Access in App Sto
 #### 1. Import the framework:
 
 ```swift
-import AppStoreConnect_Swift_SDK
+import AppStoreConnectSwiftSDK
 ```
 
 #### 2. Create your API Configuration

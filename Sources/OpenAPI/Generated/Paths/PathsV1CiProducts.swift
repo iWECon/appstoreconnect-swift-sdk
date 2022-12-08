@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/ciProducts`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiProductsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.CiProductsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

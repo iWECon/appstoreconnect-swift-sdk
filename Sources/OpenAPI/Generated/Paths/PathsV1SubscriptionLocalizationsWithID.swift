@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionLocalizations {
 		/// Path: `/v1/subscriptionLocalizations/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionLocalizations: [FieldsSubscriptionLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionLocalizationResponse> {
+		public func get(fieldsSubscriptionLocalizations: [FieldsSubscriptionLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionLocalizationResponse> {
 			.get(path, query: makeGetQuery(fieldsSubscriptionLocalizations, include))
 		}
 
@@ -38,7 +38,7 @@ extension APIEndpoint.V1.SubscriptionLocalizations {
 			case subscription
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

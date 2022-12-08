@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionPromotionalOffers {
 		/// Path: `/v1/subscriptionPromotionalOffers/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPromotionalOfferResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionPromotionalOfferResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -62,7 +62,7 @@ extension APIEndpoint.V1.SubscriptionPromotionalOffers {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionPromotionalOfferUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPromotionalOfferResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.SubscriptionPromotionalOfferUpdateRequest) -> Request<AppStoreConnectSwiftSDK.SubscriptionPromotionalOfferResponse> {
 			.patch(path, body: body)
 		}
 

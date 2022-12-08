@@ -15,7 +15,7 @@ extension APIEndpoint.V1.CustomerReviews.WithID {
 		/// Path: `/v1/customerReviews/{id}/response`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CustomerReviewResponseV1Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.CustomerReviewResponseV1Response> {
 			.get(path, query: parameters?.asQuery)
 		}
 

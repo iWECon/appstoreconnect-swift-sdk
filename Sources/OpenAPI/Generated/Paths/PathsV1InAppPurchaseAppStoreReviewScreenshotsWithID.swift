@@ -15,7 +15,7 @@ extension APIEndpoint.V1.InAppPurchaseAppStoreReviewScreenshots {
 		/// Path: `/v1/inAppPurchaseAppStoreReviewScreenshots/{id}`
 		public let path: String
 
-		public func get(fieldsInAppPurchaseAppStoreReviewScreenshots: [FieldsInAppPurchaseAppStoreReviewScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func get(fieldsInAppPurchaseAppStoreReviewScreenshots: [FieldsInAppPurchaseAppStoreReviewScreenshots]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			.get(path, query: makeGetQuery(fieldsInAppPurchaseAppStoreReviewScreenshots, include))
 		}
 
@@ -43,7 +43,7 @@ extension APIEndpoint.V1.InAppPurchaseAppStoreReviewScreenshots {
 			case inAppPurchaseV2
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			.patch(path, body: body)
 		}
 

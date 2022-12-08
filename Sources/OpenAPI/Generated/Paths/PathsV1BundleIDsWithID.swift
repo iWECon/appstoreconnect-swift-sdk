@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BundleIDs {
 		/// Path: `/v1/bundleIds/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BundleIDResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.BundleIDResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -128,7 +128,7 @@ extension APIEndpoint.V1.BundleIDs {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BundleIDUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BundleIDResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.BundleIDUpdateRequest) -> Request<AppStoreConnectSwiftSDK.BundleIDResponse> {
 			.patch(path, body: body)
 		}
 

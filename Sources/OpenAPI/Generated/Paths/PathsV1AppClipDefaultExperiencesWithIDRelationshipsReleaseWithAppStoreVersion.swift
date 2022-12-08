@@ -15,11 +15,11 @@ extension APIEndpoint.V1.AppClipDefaultExperiences.WithID.Relationships {
 		/// Path: `/v1/appClipDefaultExperiences/{id}/relationships/releaseWithAppStoreVersion`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse> {
+		public var get: Request<AppStoreConnectSwiftSDK.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse> {
 			.get(path)
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest) -> Request<Void> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageRequest) -> Request<Void> {
 			.patch(path, body: body)
 		}
 	}

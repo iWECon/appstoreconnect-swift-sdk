@@ -15,7 +15,7 @@ extension APIEndpoint.V1.ScmPullRequests {
 		/// Path: `/v1/scmPullRequests/{id}`
 		public let path: String
 
-		public func get(fieldsScmPullRequests: [FieldsScmPullRequests]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmPullRequestResponse> {
+		public func get(fieldsScmPullRequests: [FieldsScmPullRequests]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.ScmPullRequestResponse> {
 			.get(path, query: makeGetQuery(fieldsScmPullRequests, include))
 		}
 

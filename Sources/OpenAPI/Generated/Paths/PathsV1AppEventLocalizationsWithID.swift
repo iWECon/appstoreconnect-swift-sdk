@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppEventLocalizations {
 		/// Path: `/v1/appEventLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppEventLocalizationResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -89,7 +89,7 @@ extension APIEndpoint.V1.AppEventLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppEventLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppEventLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

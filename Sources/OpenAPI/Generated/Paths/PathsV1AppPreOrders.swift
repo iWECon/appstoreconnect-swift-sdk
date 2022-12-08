@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appPreOrders`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppPreOrderCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppPreOrderResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppPreOrderCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppPreOrderResponse> {
 			.post(path, body: body)
 		}
 	}

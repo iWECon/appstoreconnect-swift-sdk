@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaTesters {
 		/// Path: `/v1/betaTesters/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaTesterResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.BetaTesterResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

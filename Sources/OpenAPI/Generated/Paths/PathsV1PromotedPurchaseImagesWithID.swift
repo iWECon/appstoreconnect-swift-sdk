@@ -15,7 +15,7 @@ extension APIEndpoint.V1.PromotedPurchaseImages {
 		/// Path: `/v1/promotedPurchaseImages/{id}`
 		public let path: String
 
-		public func get(fieldsPromotedPurchaseImages: [FieldsPromotedPurchaseImages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseImageResponse> {
+		public func get(fieldsPromotedPurchaseImages: [FieldsPromotedPurchaseImages]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.PromotedPurchaseImageResponse> {
 			.get(path, query: makeGetQuery(fieldsPromotedPurchaseImages, include))
 		}
 
@@ -43,7 +43,7 @@ extension APIEndpoint.V1.PromotedPurchaseImages {
 			case promotedPurchase
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.PromotedPurchaseImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseImageResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.PromotedPurchaseImageUpdateRequest) -> Request<AppStoreConnectSwiftSDK.PromotedPurchaseImageResponse> {
 			.patch(path, body: body)
 		}
 

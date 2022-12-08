@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppInfoLocalizations {
 		/// Path: `/v1/appInfoLocalizations/{id}`
 		public let path: String
 
-		public func get(fieldsAppInfoLocalizations: [FieldsAppInfoLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppInfoLocalizationResponse> {
+		public func get(fieldsAppInfoLocalizations: [FieldsAppInfoLocalizations]? = nil, include: [Include]? = nil) -> Request<AppStoreConnectSwiftSDK.AppInfoLocalizationResponse> {
 			.get(path, query: makeGetQuery(fieldsAppInfoLocalizations, include))
 		}
 
@@ -40,7 +40,7 @@ extension APIEndpoint.V1.AppInfoLocalizations {
 			case appInfo
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppInfoLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppInfoLocalizationResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppInfoLocalizationUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppInfoLocalizationResponse> {
 			.patch(path, body: body)
 		}
 

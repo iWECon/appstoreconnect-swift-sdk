@@ -15,7 +15,7 @@ extension APIEndpoint.V2.InAppPurchases {
 		/// Path: `/v2/inAppPurchases/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseV2Response> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -139,7 +139,7 @@ extension APIEndpoint.V2.InAppPurchases {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseV2Response> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.InAppPurchaseV2UpdateRequest) -> Request<AppStoreConnectSwiftSDK.InAppPurchaseV2Response> {
 			.patch(path, body: body)
 		}
 

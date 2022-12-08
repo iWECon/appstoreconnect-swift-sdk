@@ -15,7 +15,7 @@ extension APIEndpoint.V1.Apps {
 		/// Path: `/v1/apps/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 
@@ -483,7 +483,7 @@ extension APIEndpoint.V1.Apps {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppResponse> {
+		public func patch(_ body: AppStoreConnectSwiftSDK.AppUpdateRequest) -> Request<AppStoreConnectSwiftSDK.AppResponse> {
 			.patch(path, body: body)
 		}
 	}

@@ -15,7 +15,7 @@ extension APIEndpoint.V1.SubscriptionGroups.WithID {
 		/// Path: `/v1/subscriptionGroups/{id}/subscriptionGroupLocalizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.SubscriptionGroupLocalizationsResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

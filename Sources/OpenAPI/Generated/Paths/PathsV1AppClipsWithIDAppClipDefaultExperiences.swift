@@ -15,7 +15,7 @@ extension APIEndpoint.V1.AppClips.WithID {
 		/// Path: `/v1/appClips/{id}/appClipDefaultExperiences`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperiencesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnectSwiftSDK.AppClipDefaultExperiencesResponse> {
 			.get(path, query: parameters?.asQuery)
 		}
 

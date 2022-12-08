@@ -15,7 +15,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appClipAdvancedExperiences`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppClipAdvancedExperienceCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipAdvancedExperienceResponse> {
+		public func post(_ body: AppStoreConnectSwiftSDK.AppClipAdvancedExperienceCreateRequest) -> Request<AppStoreConnectSwiftSDK.AppClipAdvancedExperienceResponse> {
 			.post(path, body: body)
 		}
 	}

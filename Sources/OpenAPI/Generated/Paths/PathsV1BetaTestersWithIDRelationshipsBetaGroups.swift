@@ -15,7 +15,7 @@ extension APIEndpoint.V1.BetaTesters.WithID.Relationships {
 		/// Path: `/v1/betaTesters/{id}/relationships/betaGroups`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaTesterBetaGroupsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<AppStoreConnectSwiftSDK.BetaTesterBetaGroupsLinkagesResponse> {
 			.get(path, query: makeGetQuery(limit))
 		}
 
@@ -25,11 +25,11 @@ extension APIEndpoint.V1.BetaTesters.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaTesterBetaGroupsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: AppStoreConnectSwiftSDK.BetaTesterBetaGroupsLinkagesRequest) -> Request<Void> {
 			.post(path, body: body)
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.BetaTesterBetaGroupsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: AppStoreConnectSwiftSDK.BetaTesterBetaGroupsLinkagesRequest) -> Request<Void> {
 			.delete(path, body: body)
 		}
 	}
